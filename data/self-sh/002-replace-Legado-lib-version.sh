@@ -15,8 +15,8 @@ echo "run path: $PWD"
     sed -i 's/${kotlinx.versions.kotlin.version}/${kotlinx.versions.kotlin}/g' mangaLegado/build.gradle
     sed -i 's/${compose.versions.compiler}/1.5.7/g' mangaLegado/build.gradle
 
-    # sed -i 's/kotlinx.reflect/"org.jetbrains.kotlin:kotlin-reflect:${kotlin_version}"/g' mangaLegado/build.gradle
-    sed -i '/kotlinx.reflect/d' mangaLegado/build.gradle
+    sed -i 's/kotlinx.reflect/"org.jetbrains.kotlin:kotlin-reflect:${kotlinx.versions.kotlin}"/g' mangaLegado/build.gradle
+    # sed -i '/kotlinx.reflect/d' mangaLegado/build.gradle
 
     # kotlinx.bundles.coroutines
     # sed -i '/kotlinx.bundles.coroutines/a \compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")' mangaLegado/build.gradle
