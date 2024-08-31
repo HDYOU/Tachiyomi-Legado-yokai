@@ -8,8 +8,7 @@ export HOME="$(cd "`dirname "$0"`"/..; pwd)"
 echo "run path: $PWD"
 
 
-match=$(grep "kotlinx.bundles.serialization" app/build.gradle.kts)
-if [ -z "$match" ]; then
+
     echo  "repalce mangaLegado dependencies:"
     
 
@@ -57,7 +56,7 @@ if [ -z "$match" ]; then
     sed -i '/viewpager2:1.0.0/d' mangaLegado/build.gradle
     sed -i '/webkit:1.4.0/d' mangaLegado/build.gradle
 
-fi
+
 
 echo ""
 cat mangaLegado/build.gradle
