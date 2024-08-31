@@ -49,7 +49,7 @@ cat << EOF > $tmp_file
     <string name="browse_long_tap_search">打开全局搜索</string>
     <string name="browse_long_tap">长按浏览按钮</string>
 
-     <string name="recents_long_tap_default">显示下载队列</string>
+    <string name="recents_long_tap_default">显示下载队列</string>
     <string name="recents_long_tap_last_read">打开最后阅读章节</string>
     <string name="recents_long_tap">长按最近按钮</string>
 	
@@ -58,13 +58,13 @@ cat << EOF > $tmp_file
     <string name="browse_long_tap">长按浏览按钮</string>
 	
 	
-	<-- book -->
+	<!-- book -->
 	<string name="enable_chapter_swipe_action">启用章节滑动操作</string>
 	
-	<-- read -->
+	<!-- read -->
 	<string name="long_strip">条漫</string>
 	<string name="crop_borders_long_strip">裁剪边缘 (条漫)</string>
-	<-- Cutout -->
+	<!-- Cutout -->
 	<string name="cutout_area_behavior">剪切区域行为</string>
     <string name="pad_cutout_areas">平板剪切区域</string>
     <string name="start_past_cutout">从剪切开始</string>
@@ -84,7 +84,7 @@ cat << EOF > $tmp_file
     <string name="download_with_id_details">可以修复下载的章节同名时相互冲突的问题</string>
 	
 	
-	<-- adv -->
+	<!-- adv -->
 	<string name="action_revoke_all_extensions">撤销已信任的未知插件</string>
     <string name="confirm_revoke_all_extensions">是否撤销已信任的未知插件?</string>
 	
@@ -125,7 +125,7 @@ if test -f $t_file ; then
 
   echo ""
   echo "Fix file: $t_file"
-  tail -n 50 $t_file
+  tail -n 100 $t_file
   echo ""
 fi
 rm -f $tmp_file
