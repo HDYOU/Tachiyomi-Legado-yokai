@@ -90,6 +90,8 @@ cat << EOF > $tmp_file
 	
 	<string name="pref_display_profile">自定义显示配置文件</string>
 
+    <string name="backup_private_pref">包括敏感设置(例如进度记录平台的账号信息)</string>
+
 EOF
 sed -i '/^$/d' $tmp_file
 sed -i '/^#/d' $tmp_file
