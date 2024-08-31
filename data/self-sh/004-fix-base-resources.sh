@@ -38,7 +38,7 @@ cat << EOF > $tmp_file
     <string name="data_and_storage">数据与存储</string>
     <string name="storage_location">存储位置</string>
     <string name="storage_usage">存储占用</string>
-    <string name="available_disk_space_info">可用: %1$s / 总共: %2$s</string>
+    <string name="available_disk_space_info">可用: %1\$s / 总共: %2\$s</string>
 
     <!-- Common -->
     <string name="recents_long_tap_default">显示下载队列</string>
@@ -137,5 +137,7 @@ sed -i 's/To test crashes/测试崩溃/g' $t_file
 sed -i 's/I told you this would crash the app, why would you want that?/这会使应用程序崩溃，一定要这样做吗？/g' $t_file
 sed -i 's/Crash it anyway/确认崩溃/g' $t_file
 sed -i 's/Nevermind/取消/g' $t_file
+
+cat $t_file
 
 exit 0
