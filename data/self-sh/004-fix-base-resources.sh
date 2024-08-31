@@ -79,7 +79,7 @@ cat << EOF > $tmp_file
 	<string name="save_pages_separately">将图片保存到单独文件夹</string>
     <string name="create_folders_by_manga_title">根据作品标题创建文件夹</string>
 	
-	<-- Download -->
+	<!-- Download -->
 	<string name="download_with_id">章节名自动附加ID</string>
     <string name="download_with_id_details">可以修复下载的章节同名时相互冲突的问题</string>
 	
