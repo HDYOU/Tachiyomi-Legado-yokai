@@ -10,6 +10,8 @@ echo "test run-self-script ...."
 # formatKotlin
 test -f app/build.gradle.kts && sed -i '/CrashlyticsPlugin/d' app/build.gradle.kts
 test -f app/build.gradle.kts && sed -i '/GoogleServicesPlugin/d' app/build.gradle.kts
-test -f app/build.gradle.kts && sed -i '/play.services.gcm/d' app/build.gradle.kts
+test -f app/build.gradle.kts && sed -i '/play.services.gcm/d' app/build.gradle.
+
+test -f app/build.gradle.kts && sed -i 's/kotlinx.versions.kotlin.version/kotlinx.versions.kotlin/g' app/build.gradle.
 
 exit 0
