@@ -10,7 +10,7 @@ echo "fix ext load ...."
 
 
 t_file="app/build.gradle.kts"
-sed -i '/dependencies {/a \    implementation("io.arrow-kt:arrow-stack:1.2.4")' $t_file
+# sed -i '/dependencies {/a \    implementation("io.arrow-kt:arrow-stack:1.2.4")' $t_file
 sed -i '/dependencies {/a \    implementation("io.arrow-kt:arrow-fx-coroutines:1.2.4")' $t_file
 
 echo ""
