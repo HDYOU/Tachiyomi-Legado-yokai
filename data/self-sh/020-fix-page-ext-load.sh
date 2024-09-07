@@ -9,7 +9,7 @@ export HOME="$(cd "`dirname "$0"`"/..; pwd)"
 echo "fix ext load ...."
 
 
-t_file="app\build.gradle.kts"
+t_file="app/build.gradle.kts"
 sed -i '/dependencies {/a \    implementation("io.arrow-kt:arrow-stack:1.2.4")' $t_file
 sed -i '/dependencies {/a \    implementation("io.arrow-kt:arrow-fx-coroutines:1.2.4")' $t_file
 
@@ -18,7 +18,7 @@ echo ""
 cat -n $t_file
 echo ""
 
-t_file="app\src\main\java\eu\kanade\tachiyomi\extension\util\ExtensionLoader.kt"
+t_file="app/src/main/java/eu/kanade/tachiyomi/extension/util/ExtensionLoader.kt"
 if test -f $t_file ; then
 
  match=`grep "arrow.fx.coroutines.parMapNotNull" $t_file`
