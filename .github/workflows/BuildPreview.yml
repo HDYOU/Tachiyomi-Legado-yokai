@@ -339,6 +339,7 @@ jobs:
       - name: Run Self Script
         run: |
           sh tmp_currnet_repo/data/ci-sh/run-self-script.sh
+          cat app/src/main/java/eu/kanade/tachiyomi/ui/reader/loader/HttpPageLoader.kt
 
       - name: Build app
         run: |
