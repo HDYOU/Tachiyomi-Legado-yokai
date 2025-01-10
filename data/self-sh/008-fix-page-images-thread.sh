@@ -13,7 +13,7 @@ if test -f $t_file ; then
  match=`grep "repeat(" $t_file`
  if [ -z "$match" ]; then
   sed -i '/init {/a \        repeat(10) {' $t_file
-  sed -i '56 a\        }' $t_file
+  sed -i '/_loadPage(it)/a \        }' $t_file
   echo "fix succ."
  fi
  head -n 60 $t_file
